@@ -42,7 +42,7 @@ const Header = () => {
     >
       <Wrapper className="h-[60px] flex justify-between items-center">
         <Link href="/">
-          <Image src={Logo} className="w-[24px] md:w-[36px]" alt="codegef" />
+          <Image src={Logo} className="w-[30px] md:w-[45px]" alt="codegef" />
         </Link>
         <Menu showCatMenu={showCatMenu} setShowCatMenu={setShowCatMenu} />
         {mobileMenu && (
