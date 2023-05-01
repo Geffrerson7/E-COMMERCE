@@ -10,8 +10,11 @@ const data = [
 ];
 
 const subMenuData = [
-  { id: 1, name: "Italian", doc_count: 11 },
-  { id: 2, name: "Brazilian", doc_count: 8 },
+  { id: 1, name: "Web Development", doc_count: 11 },
+  { id: 2, name: "Intelligence artificial", doc_count: 8 },
+  { id: 3, name: "Data Science", doc_count: 8 },
+  { id: 4, name: "DevOps", doc_count: 8 },
+  { id: 5, name: "Mobile Development", doc_count: 8 },
 ];
 
 const Menu = ({ showCatMenu, setShowCatMenu }) => {

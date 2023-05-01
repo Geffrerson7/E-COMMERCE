@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Wrapper from "./Wrapper";
 import Image from "next/image";
-import Logo from "../public/genuine-logo.png";
+import Logo from "../public/course-logo.png";
 import Link from "next/link";
 import Menu from "./Menu";
 import MobileMenu from "./MobileMenu";
@@ -16,13 +16,33 @@ const Header = () => {
   const [show, setShow] = useState("translate-y-0");
   const [lastScrollY, setLastScrollY] = useState(0);
 
+  const controlNavBar = () => {
+    if (window.scrollY > 200) {
+      if (window.scrollY > lastScrollY && !mobileMenu) {
+        setShow("-translate-y-[80px]");
+      } else {
+        setShow("shadow-sm")
+      }
+    } else {
+      setShow("translate-y-0");
+    }
+    setLastScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controlNavBar);
+    return () => {
+      window.removeEventListener("scroll", controlNavBar);
+    };
+  }, [lastScrollY]);
+
   return (
     <header
       className={`w-full h-[50px] md:h-[80px] bg-white flex items-center justify-between z-20 sticky top-0 transition transform duration-300 ${show}`}
     >
       <Wrapper className="h-[60px] flex justify-between items-center">
         <Link href="/">
-          <Image src={Logo} className="w-[24px] md:w-[36px]" />
+          <Image src={Logo} className="w-[24px] md:w-[36px]" alt="codegef" />
         </Link>
         <Menu showCatMenu={showCatMenu} setShowCatMenu={setShowCatMenu} />
         {mobileMenu && (
