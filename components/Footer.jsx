@@ -12,10 +12,7 @@ const Footer = () => {
                     {/* MENU START */}
                     <div className="flex flex-col gap-3 shrink-0">
                         <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
-                            Find a store
-                        </div>
-                        <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
-                            become a partner
+                            become a teacher
                         </div>
                         <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
                             sign up for email
@@ -40,9 +37,6 @@ const Footer = () => {
                                 Order Status
                             </div>
                             <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
-                                Delivery
-                            </div>
-                            <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
                                 Returns
                             </div>
                             <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
@@ -57,7 +51,7 @@ const Footer = () => {
                         {/* MENU START */}
                         <div className="flex flex-col gap-3">
                             <div className="font-oswald font-medium uppercase text-sm">
-                                About nike
+                                About CODEGEF
                             </div>
                             <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
                                 News
@@ -67,9 +61,6 @@ const Footer = () => {
                             </div>
                             <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
                                 Investors
-                            </div>
-                            <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
-                                Sustainability
                             </div>
                         </div>
                         {/* MENU END */}
